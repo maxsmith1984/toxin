@@ -1,0 +1,18 @@
+.main {
+
+    display: block;
+    width: 100%;
+    height: 100vh;
+    min-height: 83rem;
+
+    background: url('/assets/images/main_img/1.jpg') center no-repeat;
+    background-size: cover;
+
+    &__footer {
+
+        font-size: 1.4rem;
+        color: $DarkShade75;
+        text-align: right;
+    }
+
+}
