@@ -1,0 +1,22 @@
+.subnav {
+    display: none;
+
+    position: absolute;
+    padding: .5rem 0;
+
+    background-color: $white;
+
+    top: 100%;
+    left: 1rem;
+
+    // .subnav__link
+
+    &__link {
+        display: block;
+
+        font-size: 1.4rem;
+        color: $DarkShade50;
+
+        text-decoration: none;
+    }
+}

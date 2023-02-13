@@ -1,0 +1,17 @@
+.header {
+
+    // .header__inner
+
+    &__inner {
+        width: 100%;
+        height: 7rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__button {
+        display: flex;
+    }
+}

@@ -1,0 +1,58 @@
+.nav {
+
+    // .nav__list
+
+    &__list {
+        display: flex;
+    }
+
+    // .nav__item
+
+    &__item {
+        position: relative;
+
+        &:hover {
+
+            .nav__link,
+            .nav__link-arrow {
+                color: $DarkShade75;
+                font-weight: 700;
+            }
+
+            >.subnav {
+                display: block;
+            }
+        }
+
+
+    }
+
+    // .nav__link
+
+    &__link {
+        display: block;
+        margin: 0 1rem;
+
+        font-size: 1.4rem;
+        color: $DarkShade50;
+
+        text-decoration: none;
+
+        text-shadow: 0 4px 4px rgba($black, .25);
+
+        &::before {
+            display: block;
+            content: attr(title);
+            font-weight: bold;
+            height: 0;
+            color: transparent;
+            overflow: hidden;
+            visibility: hidden;
+        }
+
+    }
+
+    &__link-arrow {
+        text-shadow: 0 4px 4px rgba($black, .25);
+    }
+}
