@@ -1,13 +1,16 @@
 .subnav {
     display: none;
+    width: 13rem;
 
     position: absolute;
-    padding: .5rem 0;
+    padding: 0.5rem;
 
     background-color: $white;
+    box-shadow: 0 4px 4px rgba($black, .25);
+    border-radius: 5px;
 
     top: 100%;
-    left: 1rem;
+    left: -1rem;
 
     // .subnav__link
 
@@ -18,5 +21,10 @@
         color: $DarkShade50;
 
         text-decoration: none;
+
+        &:hover {
+            color: $DarkShade75;
+            font-weight: 700;
+        }
     }
 }

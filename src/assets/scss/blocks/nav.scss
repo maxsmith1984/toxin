@@ -13,10 +13,13 @@
 
         &:hover {
 
-            .nav__link,
-            .nav__link-arrow {
+            .nav__link {
                 color: $DarkShade75;
                 font-weight: 700;
+            }
+
+            .nav__link-arrow {
+                transform: scale(1.1);
             }
 
             >.subnav {
@@ -53,6 +56,11 @@
     }
 
     &__link-arrow {
-        text-shadow: 0 4px 4px rgba($black, .25);
+        position: absolute;
+        top: 50%;
+        right: -4px;
+
+        transform: translateY(-50%);
+        transition: transform 0.2s ease-in-out;
     }
 }

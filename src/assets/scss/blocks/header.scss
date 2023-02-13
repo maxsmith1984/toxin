@@ -1,6 +1,5 @@
 .header {
-
-    // .header__inner
+    box-shadow: 0 4px 4px rgba($black, .25);
 
     &__inner {
         width: 100%;
@@ -11,7 +10,21 @@
         align-items: center;
     }
 
+    &__controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-title {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
     &__button {
         display: flex;
+        align-items: center;
+        padding-left: 2rem;
     }
 }
