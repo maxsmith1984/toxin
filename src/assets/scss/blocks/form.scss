@@ -1,0 +1,46 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+
+    // .form__date
+
+    &__date {
+        display: flex;
+        padding-top: 2.2rem;
+    }
+
+    // .form__arrive
+
+    &__arrive {}
+
+    // .form__titile
+
+    &__titile {
+        font-family: inherit;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        font-weight: 700;
+        color: $DarkShade100;
+        text-transform: uppercase;
+
+    }
+
+    // .form__input
+
+    &__input {}
+
+    // .form__departure
+
+    &__departure {
+        padding-left: 2rem;
+    }
+
+    // .form__guests
+
+    &__guests {}
+
+    // .form__btn
+
+    &__btn {}
+}

@@ -1,4 +1,5 @@
 .main {
+    padding-top: 7rem;
 
     display: block;
     width: 100%;
@@ -8,8 +9,27 @@
     background: url('/assets/images/main_img/1.jpg') center no-repeat;
     background-size: cover;
 
-    &__footer {
 
+    &__content {
+        display: block;
+        width: 38rem;
+        height: 37.4rem;
+
+        background-color: $white;
+        border-radius: 4px;
+        box-shadow: 0 4px 25px rgba($black, .20);
+    }
+
+    &__title {
+        padding: 4rem 3rem 0;
+
+        font-size: 2.4rem;
+        line-height: 1.2;
+        font-weight: 700;
+        color: $DarkShade100;
+    }
+
+    &__footer {
         font-size: 1.4rem;
         color: $DarkShade75;
         text-align: right;
