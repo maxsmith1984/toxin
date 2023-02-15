@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 3rem;
+    padding-right: 3rem;
 
     // .form__date
 
@@ -12,12 +13,15 @@
 
     // .form__arrive
 
-    &__arrive {}
+    &__arrive {
+        position: relative;
+    }
 
     // .form__titile
 
     &__titile {
-        font-family: inherit;
+        padding-bottom: .5rem;
+
         font-size: 1.2rem;
         line-height: 1.2;
         font-weight: 700;
@@ -28,19 +32,74 @@
 
     // .form__input
 
-    &__input {}
+    &__input {
+        width: 15rem;
+        height: 4.4rem;
+
+        padding-left: 1.5rem;
+
+
+        font-family: inherit;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        line-height: 1.3;
+        font-weight: 400;
+
+
+        border: 1px solid $DarkShade25;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &--simplebtn {
+            width: 100%;
+
+            background-color: $white;
+            text-align: left;
+        }
+
+
+        &-arrow {
+            position: absolute;
+            top: 3.6rem;
+            right: 1.5rem;
+            z-index: 100;
+
+            cursor: pointer;
+
+            &--bt {
+                top: 5.8rem;
+            }
+        }
+    }
 
     // .form__departure
 
     &__departure {
+        position: relative;
         padding-left: 2rem;
     }
 
     // .form__guests
 
-    &__guests {}
+    &__guests {
+        position: relative;
+        padding-top: 2rem;
+    }
 
     // .form__btn
 
-    &__btn {}
+    &__btn {
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        &-arrow {
+            position: absolute;
+            top: 50%;
+            right: 1.5rem;
+            z-index: 10;
+
+            transform: translateY(-50%);
+        }
+    }
 }

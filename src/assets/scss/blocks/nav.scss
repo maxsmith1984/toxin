@@ -27,6 +27,9 @@
             }
         }
 
+        &--pl {
+            padding-left: 1.5rem;
+        }
 
     }
 
@@ -41,7 +44,7 @@
 
         text-decoration: none;
 
-        text-shadow: 0 4px 4px rgba($black, .25);
+
 
         &::before {
             display: block;
@@ -58,7 +61,7 @@
     &__link-arrow {
         position: absolute;
         top: 50%;
-        right: -4px;
+        right: -5px;
 
         transform: translateY(-50%);
         transition: transform 0.2s ease-in-out;

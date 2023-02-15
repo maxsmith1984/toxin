@@ -39,3 +39,22 @@
         transform: scale(1.1);
     }
 }
+
+.btn--find {
+    position: relative;
+    width: 100%;
+
+    text-align: center;
+    font-weight: 700;
+
+    padding: 1.285em 1.67em;
+
+
+    color: $white;
+    background: linear-gradient(#BC9CFF, #8BA4F9);
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+}
