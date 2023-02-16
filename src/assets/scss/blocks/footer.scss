@@ -1,0 +1,134 @@
+.footer {
+
+    &__content {
+        display: flex;
+        padding: 10rem 0;
+    }
+
+    &__logo {
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+        margin-bottom: 2rem;
+    }
+
+    &__column {
+        flex: 1;
+
+        margin-left: 4rem;
+
+        &:first-child {
+            min-width: 26rem;
+            margin-left: 0;
+        }
+
+        &:last-child {
+            min-width: 26rem;
+        }
+
+    }
+
+
+    &__text {
+        max-width: 26rem;
+
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.7;
+        color: $DarkShade75;
+    }
+
+
+    &__title {
+        margin-bottom: 2.1rem;
+
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $DarkShade100;
+        text-transform: uppercase;
+    }
+
+    &__navigation-item {
+        margin-bottom: 2rem;
+    }
+
+
+    &__navigation-link {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $DarkShade50;
+        text-decoration: none;
+
+        &:hover {
+            color: $DarkShade75;
+        }
+    }
+
+    &__form {
+        position: relative;
+
+    }
+
+    &__form-input {
+
+        display: block;
+        margin-top: 2rem;
+        min-width: 26rem;
+        padding: 1.2rem 1.5rem 1.2rem;
+
+        border: 1px solid $DarkShade25;
+        border-radius: 4px;
+        background: $white;
+        text-align: left;
+
+        transition: border-color, box-shadow .2s linear;
+
+        &:hover {
+            border-color: $DarkShade100;
+        }
+
+        &:focus {
+            outline: 0;
+            border-color: $DarkShade100;
+            box-shadow: 0 4px 4px rgba($black, .25);
+        }
+
+        &::placeholder {
+            font-family: inherit;
+            color: $DarkShade25;
+
+        }
+
+    }
+
+    &__form-arrow {
+        display: block;
+
+        position: absolute;
+        top: 50%;
+        right: 1.5rem;
+        z-index: 10;
+
+        transform: translateY(-50%);
+
+
+    }
+
+    &__copyright {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: #E5E5E5;
+
+        }
+    }
+}
