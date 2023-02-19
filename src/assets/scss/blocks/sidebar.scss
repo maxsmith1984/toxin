@@ -1,0 +1,73 @@
+.sidebar {
+    max-width: 32rem;
+
+    &__item {
+
+        &:first-child {
+            margin-top: 3rem;
+        }
+    }
+
+    &__item-title {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        font-weight: 700;
+        color: $DarkShade100;
+        text-transform: uppercase;
+    }
+
+    &__input {
+        position: relative;
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__input-date {
+        min-width: 26.6rem;
+        height: 4.4rem;
+
+        padding: 0 1.6rem;
+
+        font-family: inherit;
+        text-transform: uppercase;
+        color: $DarkShade75;
+        cursor: pointer;
+
+        border: 1px solid $DarkShade25;
+        border-radius: 4px;
+    }
+
+    &__input-arrow {
+        position: absolute;
+
+        top: 50%;
+        right: 7rem;
+
+        cursor: pointer;
+
+        transform: translateY(-50%);
+    }
+
+    &__guests {
+        width: 26.6rem;
+        height: 4.4rem;
+
+        padding: 0 1.6rem;
+
+        border: 1px solid $DarkShade25;
+        border-radius: 4px;
+
+        background-color: $white;
+
+        &::placeholder {
+            color: $DarkShade25;
+        }
+    }
+}
+
+.range__slider {
+    width: 26.6rem;
+    height: 6rem;
+    text-align: center;
+    padding: 2rem;
+}
