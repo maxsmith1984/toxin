@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("../../src/fonts/montserrat_bold.woff2") format("woff2"), url("../../fonts/montserrat_bold.woff") format("woff");
+    src: url("../fonts/montserrat_bold.woff2") format("woff2"), url("../fonts/montserrat_bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-  src: url("../../fonts/montserrat_regular.woff2") format("woff2"), url("../../fonts/montserrat_regular.woff") format("woff");
+  src: url("../fonts/montserrat_regular.woff2") format("woff2"), url("../fonts/montserrat_regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -664,7 +664,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 100%;
     height: 100vh;
     min-height: 83rem;
-    background: url("/assets/images/main_img/1.jpg") center no-repeat;
+    background: center no-repeat;
     background-size: cover;
 }
 
@@ -942,4 +942,83 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .social__item:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.sidebar {
+    max-width: 32rem;
+}
+
+.sidebar__item:first-child {
+    margin-top: 3rem;
+}
+
+.sidebar__item-title {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: hsl(238deg, 35%, 19%);
+    text-transform: uppercase;
+}
+
+.sidebar__input {
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar__input-date {
+    min-width: 26.6rem;
+    height: 4.4rem;
+    padding: 0 1.6rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: hsla(238deg, 35%, 19%, 0.75);
+    cursor: pointer;
+    border: 1px solid hsla(238deg, 35%, 19%, 0.25);
+    border-radius: 4px;
+}
+
+.sidebar__input-arrow {
+    position: absolute;
+    top: 50%;
+    right: 7rem;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.sidebar__guests {
+    width: 26.6rem;
+    height: 4.4rem;
+    padding: 0 1.6rem;
+    border: 1px solid hsla(238deg, 35%, 19%, 0.25);
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.sidebar__guests::-webkit-input-placeholder {
+    color: hsla(238deg, 35%, 19%, 0.25);
+}
+
+.sidebar__guests::-moz-placeholder {
+    color: hsla(238deg, 35%, 19%, 0.25);
+}
+
+.sidebar__guests:-ms-input-placeholder {
+    color: hsla(238deg, 35%, 19%, 0.25);
+}
+
+.sidebar__guests::-ms-input-placeholder {
+    color: hsla(238deg, 35%, 19%, 0.25);
+}
+
+.sidebar__guests::placeholder {
+    color: hsla(238deg, 35%, 19%, 0.25);
+}
+
+.range__slider {
+    width: 26.6rem;
+    height: 6rem;
+    text-align: center;
+    padding: 2rem;
 }
