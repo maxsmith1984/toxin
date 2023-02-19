@@ -1,12 +1,8 @@
 .nav {
 
-    // .nav__list
-
     &__list {
         display: flex;
     }
-
-    // .nav__item
 
     &__item {
         position: relative;
@@ -32,8 +28,6 @@
         }
 
     }
-
-    // .nav__link
 
     &__link {
         display: block;

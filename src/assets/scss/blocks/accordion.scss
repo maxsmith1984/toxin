@@ -1,0 +1,128 @@
+.form {
+
+
+    &__accordion {
+        display: none;
+
+        flex-direction: column;
+
+        position: absolute;
+        top: 8.3rem;
+        z-index: 10;
+
+        width: 32rem;
+        height: auto;
+
+        background-color: $white;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 4px 25px rgba($black, .20);
+
+    }
+}
+
+.accordion {
+
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: .5rem;
+
+    }
+
+
+    &__item-title {
+        width: 65%;
+        margin: 0.5rem 1rem;
+
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $DarkShade100;
+        text-transform: uppercase;
+    }
+
+
+    &__item-count {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 35%;
+    }
+
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__footer-clear,
+    &__footer-accept {
+        margin: 1.5rem;
+
+        font-family: inherit;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        font-weight: 700;
+        color: $Purple;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        border: none;
+        background: none;
+        padding: 0;
+
+        &:hover {
+            color: darken($Purple, 10%);
+        }
+    }
+
+    &__footer-accept {
+        margin-right: .5rem;
+    }
+
+}
+
+.count {
+
+
+    &__del,
+    &__add {
+        display: inline-block;
+        margin: 0.5rem;
+
+        width: 3rem;
+        height: 3rem;
+
+        text-decoration: none;
+        color: $DarkShade50;
+        font-size: 1.8rem;
+        text-align: center;
+        border-radius: 50%;
+
+    }
+
+    &__del {
+        border: 1px solid $DarkShade25;
+
+        &--active {
+            border-color: $DarkShade50;
+        }
+    }
+
+    &__add {
+        border: 1px solid $DarkShade50;
+    }
+
+
+    &__title {
+        padding: 0.5rem;
+
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+}

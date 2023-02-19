@@ -21,16 +21,55 @@ title: Toxin | Home
 
                     </div>
                 </div>
+
                 <div class="form__guests">
                     <h3 class="form__titile">гости</h3>
-                    <input class="form__input form__input--simplebtn" type="button" value="гости">
+                    <input class="form__input form__input--simplebtn" type="button" value="Cколько гостей">
                     <img class="form__input-arrow form__input-arrow--bt" src="assets/images/icons/arrow-bottom.svg"
                         alt="arrow">
-                </div>
-                <div class="form__btn">
-                    <button class="btn btn--find">подобрать номер
-                        <img class="form__btn-arrow" src="assets/images/icons/arrow_forward.svg" alt="arrow"></button>
-                </div>
+
+                    <div class="form__btn">
+                        <button class="btn btn--find">подобрать номер
+                            <img class="form__btn-arrow" src="assets/images/icons/arrow_forward.svg"
+                                alt="arrow"></button>
+                    </div>
+
+                    <div class="form__accordion accordion">
+                        <div class="accordion__item">
+                            <div class="accordion__item-title">взрослые</div>
+                            <div class="accordion__item-count">
+                                <a class="count__del" href="#">-</a>
+                                <div class="count__title">1</div>
+                                <a class="count__add" href="#">+</a>
+                            </div>
+
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__item-title">дети</div>
+                            <div class="accordion__item-count">
+                                <a class="count__del" href="#">-</a>
+                                <div class="count__title">2</div>
+                                <a class="count__add" href="#">+</a>
+                            </div>
+
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__item-title">младенцы</div>
+                            <div class="accordion__item-count">
+                                <a class="count__del" href="#">-</a>
+                                <div class="count__title">1</div>
+                                <a class="count__add" href="#">+</a>
+                            </div>
+
+                        </div>
+                        <div class="accordion__footer">
+                            <button class="accordion__footer-clear" type="button">очистить</button>
+                            <button class="accordion__footer-accept" type="button">применить</button>
+                        </div>
+                    </div><!-- form__accordion accordion -->
+                </div><!-- form__guests -->
+
+
 
             </form>
         </div>

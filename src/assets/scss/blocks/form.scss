@@ -45,6 +45,7 @@
         line-height: 1.3;
         font-weight: 400;
 
+        color: $DarkShade75;
 
         border: 1px solid $DarkShade25;
         border-radius: 4px;
@@ -55,6 +56,8 @@
 
             background-color: $white;
             text-align: left;
+
+            text-transform: none;
         }
 
 
@@ -69,6 +72,10 @@
             &--bt {
                 top: 5.8rem;
             }
+        }
+
+        &:hover {
+            border-color: $DarkShade50;
         }
     }
 

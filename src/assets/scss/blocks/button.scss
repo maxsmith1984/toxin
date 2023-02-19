@@ -8,7 +8,6 @@
     border: none;
     cursor: pointer;
     border-radius: 2.2rem;
-    box-shadow: 0 4px 4px rgba($black, .25);
 
     font-family: inherit;
     font-size: 1.2rem;
@@ -24,8 +23,10 @@
     background-color: $white;
     border: 2px solid;
 
+    transition: opacity .2s linear;
+
     &:hover {
-        transform: scale(1.1);
+        opacity: 0.5;
     }
 }
 
@@ -34,9 +35,10 @@
 
     color: $white;
     background: linear-gradient(#BC9CFF, #8BA4F9);
+    transition: opacity .2s linear;
 
     &:hover {
-        transform: scale(1.1);
+        opacity: 0.5;
     }
 }
 
@@ -53,8 +55,10 @@
     color: $white;
     background: linear-gradient(#BC9CFF, #8BA4F9);
 
+    transition: opacity .2s linear;
+
     &:hover {
-        transform: scale(1.05);
+        opacity: 0.5;
     }
 
 }
