@@ -1,0 +1,58 @@
+.counter {
+
+
+    &__minus,
+    &__plus {
+        display: flex;
+        flex: 0 0 3rem;
+        justify-content: center;
+        align-items: center;
+
+        height: 3rem;
+
+        margin: 0.5rem;
+
+        color: $DarkShade50;
+        font-size: 1.8rem;
+
+        border-radius: 50%;
+        cursor: pointer;
+        user-select: none;
+
+    }
+
+    &__minus {
+        border: 1px solid $DarkShade50;
+
+        &--disabled {
+            border-color: $DarkShade25;
+            cursor: default;
+        }
+    }
+
+    &__plus {
+        border: 1px solid $DarkShade50;
+    }
+
+
+    &__title {
+        flex: 0 0 3rem;
+        padding: 0.5rem;
+
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+
+        & input {
+            width: 100%;
+
+            background-color: $white;
+            border: none;
+            text-align: center;
+
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+    }
+
+}

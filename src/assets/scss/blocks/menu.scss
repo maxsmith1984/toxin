@@ -1,7 +1,7 @@
 .form {
 
 
-    &__accordion {
+    &__menu {
         display: none;
 
         flex-direction: column;
@@ -17,10 +17,14 @@
         border-radius: 0 0 4px 4px;
         box-shadow: 0 4px 25px rgba($black, .20);
 
+        &--show {
+            display: flex;
+        }
+
     }
 }
 
-.accordion {
+.menu {
 
 
     &__item {
@@ -34,7 +38,7 @@
 
 
     &__item-title {
-        width: 65%;
+        width: 60%;
         margin: 0.5rem 1rem;
 
         font-size: 1.2rem;
@@ -44,11 +48,11 @@
     }
 
 
-    &__item-count {
+    &__counter {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 35%;
+        width: 40%;
     }
 
 
@@ -79,50 +83,16 @@
         }
     }
 
-    &__footer-accept {
-        margin-right: .5rem;
-    }
-
-}
-
-.count {
-
-
-    &__del,
-    &__add {
-        display: inline-block;
-        margin: 0.5rem;
-
-        width: 3rem;
-        height: 3rem;
-
-        text-decoration: none;
-        color: $DarkShade50;
-        font-size: 1.8rem;
-        text-align: center;
-        border-radius: 50%;
-
-    }
-
-    &__del {
-        border: 1px solid $DarkShade25;
+    &__footer-clear {
+        visibility: hidden;
 
         &--active {
-            border-color: $DarkShade50;
+            visibility: visible;
         }
     }
 
-    &__add {
-        border: 1px solid $DarkShade50;
-    }
-
-
-    &__title {
-        padding: 0.5rem;
-
-        text-align: center;
-        font-size: 1.2rem;
-        font-weight: 700;
+    &__footer-accept {
+        margin-right: .5rem;
     }
 
 }
