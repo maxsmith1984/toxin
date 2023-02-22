@@ -1,5 +1,6 @@
 const counter = document.querySelectorAll('[data-counter]');
 const clearBtn = document.getElementById('clear');
+let counerInput = document.querySelectorAll('.input__counter');
 
 if (counter) {
     counter.forEach(counter => {
@@ -40,8 +41,6 @@ if (counter) {
                 let sum = document.getElementById('sum');;
 
 
-
-                let counerInput = document.querySelectorAll('.input__counter');
                 let numbers = [];
 
                 for (let i = 0; i < counerInput.length; i++) {
@@ -63,8 +62,9 @@ if (counter) {
                         sum.value = sumArr(numbers) + ' ' + 'гостя';
                     } else if (sum.value >= 5) {
                         sum.value = sumArr(numbers) + ' ' + 'гостей';
+                    } else if (sum.value == 0) {
+                        sum.value = 'Сколько гостей';
                     }
-
                 }
 
                 function sumArr(arr) {
@@ -82,7 +82,15 @@ if (counter) {
 
                 }
 
+                clearBtn.addEventListener('click', event => {
+                    counerInput.forEach(function () {
 
+                        target.closest('.menu__counter').querySelector('input').value = '0';
+                        clearBtn.classList.remove('menu__footer-clear--active');
+                        sum.value = 'Сколько гостей';
+                        target.closest('.menu__counter').querySelector('.counter__minus').classList.add('counter__minus--disabled');
+                    });
+                });
 
             }
         });
