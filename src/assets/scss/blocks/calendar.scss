@@ -1,0 +1,139 @@
+.wrapper {
+
+    display: none;
+
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    z-index: 1000;
+
+    width: 32rem;
+
+    background-color: $white;
+    border-radius: 4px;
+    border: 1px solid $DarkShade25;
+    box-shadow: 0 10px 20px rgba($DarkShade5, 0.05);
+}
+
+.wrapper--show {
+    display: block;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2rem;
+    padding-bottom: 3rem;
+
+    &__date {
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: $DarkShade100;
+    }
+
+    &__arrow {
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.calendar {
+    padding: 2rem;
+    padding-top: 0;
+
+}
+
+.weeks,
+.days {
+    display: flex;
+    flex-wrap: wrap;
+
+    text-align: center;
+
+    &__item {
+        position: relative;
+
+        width: calc(100%/7);
+
+
+
+    }
+
+}
+
+.weeks {
+    &__item {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $Purple;
+    }
+}
+
+.days {
+    &__item {
+        padding: 0.82em;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $DarkShade50;
+        z-index: 1;
+
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            content: "";
+            height: 4rem;
+            width: 4rem;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+        &:hover:before {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            opacity: 0.25;
+        }
+
+    }
+}
+
+.days__item--current {
+    color: $white;
+    font-weight: 700;
+
+
+    &::before {
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+
+    }
+}
+
+.days__item--active {
+    color: $white;
+    font-weight: 700;
+
+
+    &::before {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+    }
+}
+
+.days__item--bgactive {
+
+    &::before {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity: 0.25;
+    }
+}
+
+.days__item--inactive {
+    color: $DarkShade25;
+}

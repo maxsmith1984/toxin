@@ -11,15 +11,44 @@ title: Toxin | Home
                 <div class="form__date">
                     <div class="form__arrive">
                         <h3 class="form__titile">прибытие</h3>
-                        <input class="form__input" type="date" placeholder="дд.мм.гггг">
+                        <input class="form__input" type="date" placeholder="дд.мм.гггг" data-calendar="calendar">
                         <img class="form__input-arrow" src="assets/images/icons/arrow-bottom.svg" alt="arrow">
                     </div>
                     <div class="form__departure">
                         <h3 class="form__titile">выезд</h3>
-                        <input class="form__input" type="date" placeholder="дд.мм.гггг">
+                        <input class="form__input" type="date" placeholder="дд.мм.гггг" data-calendar="calendar">
                         <img class="form__input-arrow" src="assets/images/icons/arrow-bottom.svg" alt="arrow">
 
                     </div>
+
+                    <div class="wrapper" id="calendar">
+                        <header class="calendar-header">
+
+
+                            <img id="prev" class="calendar-header__arrow"
+                                src="assets/images/icons/arrow_back_purple.svg" alt="arrow">
+                            <div class="calendar-header__date"></div>
+                            <img id="next" class="calendar-header__arrow"
+                                src="assets/images/icons/arrow_forward_purple.svg" alt="arrow">
+
+                        </header>
+                        <div class="calendar">
+                            <ul class="weeks">
+                                <li class="weeks__item">Пн</li>
+                                <li class="weeks__item">Вт</li>
+                                <li class="weeks__item">Ср</li>
+                                <li class="weeks__item">Чт</li>
+                                <li class="weeks__item">Пт</li>
+                                <li class="weeks__item">Сб</li>
+                                <li class="weeks__item">Вс</li>
+                            </ul>
+                            <ul class="days">
+                            </ul>
+                        </div>
+                    </div>
+
+
+
                 </div>
 
                 <div class="form__guests">
