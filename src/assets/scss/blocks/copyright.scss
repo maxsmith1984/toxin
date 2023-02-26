@@ -1,12 +1,29 @@
 .copyright {
 
-
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         min-height: 7rem;
+
+        @include breakpoint($footernone-bp) {
+
+            height: 36.7rem;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+    }
+
+    &__logo {
+        display: none;
+
+        @include breakpoint($footernone-bp) {
+
+            display: block;
+
+        }
     }
 
 
@@ -19,6 +36,12 @@
 
 .social {
     display: flex;
+
+    @include breakpoint($footernone-bp) {
+
+        margin-top: 2.5rem;
+
+    }
 
 
     &__item {

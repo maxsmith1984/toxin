@@ -2,6 +2,7 @@
 @import 'vars';
 @import 'vendor/reset.scss';
 @import 'container';
+@import 'mixins';
 
 
 *,
@@ -41,3 +42,4 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @import 'blocks/menu';
 @import 'blocks/counter';
 @import 'blocks/calendar';
+@import 'blocks/burger';

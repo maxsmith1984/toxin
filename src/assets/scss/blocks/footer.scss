@@ -3,6 +3,16 @@
     &__content {
         display: flex;
         padding: 10rem 0;
+
+        @include breakpoint($tablet-bp) {
+            padding: 5rem 0;
+
+        }
+
+        @include breakpoint($footernone-bp) {
+            display: none;
+
+        }
     }
 
     &__logo {
@@ -14,24 +24,34 @@
     }
 
     &__column {
+        width: 100%;
         flex: 1;
 
         margin-left: 4rem;
 
         &:first-child {
-            min-width: 26rem;
             margin-left: 0;
         }
 
+        &:first-child,
         &:last-child {
             min-width: 26rem;
+
+            @include breakpoint($tablet-bp) {
+                min-width: 16rem;
+
+            }
+
         }
 
+        @include breakpoint($tablet-bp) {
+            margin-left: 1rem;
+
+        }
     }
 
 
     &__text {
-        max-width: 26rem;
 
         font-size: 1.4rem;
         font-weight: 400;
@@ -51,6 +71,11 @@
 
     &__navigation-item {
         margin-bottom: 2rem;
+
+        @include breakpoint($tablet-bp) {
+            margin-bottom: 1rem;
+
+        }
     }
 
 
@@ -74,7 +99,9 @@
 
         display: block;
         margin-top: 2rem;
-        min-width: 26rem;
+
+        width: 100%;
+
         padding: 1.2rem 1.5rem 1.2rem;
 
         border: 1px solid $DarkShade25;
