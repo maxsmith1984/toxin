@@ -7,7 +7,7 @@
         flex-direction: column;
 
         position: absolute;
-        top: 8.3rem;
+        top: 9rem;
         z-index: 10;
 
         width: 32rem;
@@ -16,6 +16,10 @@
         background-color: $white;
         border-radius: 0 0 4px 4px;
         box-shadow: 0 4px 25px rgba($black, .20);
+
+        @include breakpoint($mobile-bp) {
+            width: 28rem;
+        }
 
         &--show {
             display: flex;
@@ -53,6 +57,10 @@
         justify-content: space-between;
         align-items: center;
         width: 40%;
+
+        @include breakpoint($mobile-bp) {
+            width: 50%;
+        }
     }
 
 

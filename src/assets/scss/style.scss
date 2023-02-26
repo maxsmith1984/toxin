@@ -1,7 +1,7 @@
 @import 'fonts';
 @import 'vars';
 @import 'vendor/reset.scss';
-@import 'container';
+
 @import 'mixins';
 
 
@@ -30,6 +30,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 
+@import 'blocks/container';
 @import 'blocks/header';
 @import 'blocks/nav';
 @import 'blocks/subnav';

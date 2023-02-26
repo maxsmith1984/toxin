@@ -4,6 +4,11 @@
     padding-left: 3rem;
     padding-right: 3rem;
 
+    @include breakpoint($mobile-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     // .form__date
 
     &__date {
@@ -52,6 +57,11 @@
         border: 1px solid $DarkShade25;
         border-radius: 4px;
         cursor: pointer;
+
+        @include breakpoint($mobile-bp) {
+            width: 13rem;
+            font-size: 1.2rem;
+        }
 
 
         &--simplebtn {
