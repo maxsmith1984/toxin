@@ -1,7 +1,7 @@
 const currentDate = document.querySelector('.calendar-header__date');
 const daysTag = document.querySelector('.days');
 const prevNextIcon = document.querySelectorAll('.calendar-header__arrow');
-
+const clearCalendar = document.getElementById('clear-calendar');
 
 let date = new Date(),
     currYear = date.getFullYear(),
@@ -32,29 +32,6 @@ const renderCalendar = () => {
     currentDate.innerText = `${month[currMonth]} ${currYear}`;
     daysTag.innerHTML = liTag;
 
-
-
-
-    let day = document.querySelectorAll('.days__item');
-
-
-    day.forEach(item => {
-        item.addEventListener('click', event => {
-            let selectedDay = document.querySelectorAll('.days__item--active').length;
-
-            if (item.classList.contains('days__item--active')) {
-                item.classList.remove('days__item--active');
-
-            } else if (selectedDay >= 2) {
-            } else {
-                item.classList.add('days__item--active')
-            }
-
-
-        });
-
-    });
-
 };
 
 renderCalendar();
@@ -72,6 +49,27 @@ prevNextIcon.forEach(icon => {
         }
         renderCalendar();
     });
+});
+
+
+let day = document.querySelectorAll('.days__item');
+
+day.forEach(item => {
+    item.addEventListener('click', event => {
+        let selectedDay = document.querySelectorAll('.days__item--active').length;
+
+
+        if (item.classList.contains('days__item--active')) {
+            item.classList.remove('days__item--active');
+
+        } else if (selectedDay >= 2) {
+        }
+        else {
+            item.classList.add('days__item--active');
+            clearCalendar.classList.add('menu__footer-clear--active');
+        }
+    });
+
 });
 
 

@@ -4,6 +4,7 @@ const menuBtn = document.querySelectorAll('[data-menu]');
 const calendar = document.getElementById('calendar');
 const calendarBtn = document.querySelectorAll('[data-calendar]');
 
+
 const body = document.body;
 
 if (menu) {
@@ -11,8 +12,6 @@ if (menu) {
         item.addEventListener('click', event => {
             menu.classList.toggle('form__menu--show');
             event.stopPropagation();
-
-
 
         });
     });
@@ -42,8 +41,6 @@ if (calendar) {
             calendar.classList.toggle('wrapper--show');
             event.stopPropagation();
             event.preventDefault()
-
-
         });
     });
 }

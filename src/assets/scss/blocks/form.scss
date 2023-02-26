@@ -53,6 +53,7 @@
         border-radius: 4px;
         cursor: pointer;
 
+
         &--simplebtn {
             width: 100%;
 
@@ -76,9 +77,12 @@
             }
         }
 
-        &:hover {
+        &:hover,
+        &--show {
             border-color: $DarkShade50;
         }
+
+
     }
 
     // .form__departure
