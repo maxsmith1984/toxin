@@ -1,0 +1,63 @@
+.check-boxs {
+
+    &__input {
+        display: none;
+    }
+
+    &__fake {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+
+        position: relative;
+
+        border: 1px solid $DarkShade25;
+        background-color: $white;
+        border-radius: 4px;
+
+        &::before {
+            content: "";
+            display: block;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+
+            width: 100%;
+            height: 100%;
+
+            background: url('../images/icons/check.svg') center no-repeat;
+
+            transform: translate(-50%, -50%);
+
+            opacity: 0;
+
+            transition: .1s ease-in-out;
+
+        }
+
+    }
+
+    &__input:checked+.check-boxs__fake::before {
+        opacity: 1;
+    }
+
+    &__input:checked+.check-boxs__fake {
+        border: 1px solid $Purple;
+    }
+
+
+    &__text {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: $DarkShade50;
+
+        &--fwb {
+            font-weight: 700;
+            color: $DarkShade75;
+        }
+    }
+}

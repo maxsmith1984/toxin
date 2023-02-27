@@ -3,32 +3,142 @@
         <div class="sidebar__item">
             <h3 class="sidebar__item-title">даты пребывания в отеле</h3>
             <div class="sidebar__input">
-                <input class="sidebar__input-date" type="date" value="19 авг – 23 авг" placeholder="ДД.ММ.ГГГГ">
-                <img class="sidebar__input-arrow" src="assets/images/icons/arrow-bottom.svg" alt="arrow">
+                <input class="form__input input_date sidebar__input-date" type="date" placeholder="дд.мм.гггг"
+                    data-calendar="calendar">
+                <img class="form__input-arrow sidebar__input-arrow" src="assets/images/icons/arrow-bottom.svg"
+                    alt="arrow">
+
+                <div class="wrapper wrapper-sidebar" id="calendar">
+                    <header class="calendar-header">
+
+
+                        <img id="prev" class="calendar-header__arrow" src="assets/images/icons/arrow_back_purple.svg"
+                            alt="arrow">
+                        <div class="calendar-header__date"></div>
+                        <img id="next" class="calendar-header__arrow" src="assets/images/icons/arrow_forward_purple.svg"
+                            alt="arrow">
+
+                    </header>
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li class="weeks__item">Пн</li>
+                            <li class="weeks__item">Вт</li>
+                            <li class="weeks__item">Ср</li>
+                            <li class="weeks__item">Чт</li>
+                            <li class="weeks__item">Пт</li>
+                            <li class="weeks__item">Сб</li>
+                            <li class="weeks__item">Вс</li>
+                        </ul>
+                        <ul class="days">
+                        </ul>
+                    </div>
+                    <div class="menu__footer">
+                        <button class="menu__footer-clear" type="button" id="clear-calendar">очистить</button>
+                        <button class="menu__footer-accept">применить</button>
+                    </div>
+                </div>
             </div>
             <div class="sidebar__item">
                 <h3 class="sidebar__item-title">гости</h3>
                 <div class="sidebar__input">
-                    <input class="sidebar__guests" placeholder="Сколько гостей">
-                    <img class="sidebar__input-arrow" src="assets/images/icons/arrow-bottom.svg" alt="arrow">
+                    <input class="sidebar__guests form__input form__input--simplebtn" type="button"
+                        value="Cколько гостей" data-menu="menu" id="sum">
+                    <img class="sidebar__input-arrow form__input-arrow form__input-arrow--bt"
+                        src="assets/images/icons/arrow-bottom.svg" alt="arrow">
+                    <div class="form__menu form__sidebar menu" id="menu">
+                        <div class="menu__item">
+                            <div class="menu__item-title">Взрослые</div>
+                            <div class="menu__counter menu__counter--smwidth counter " data-counter>
+                                <div class="counter__minus counter__minus--disabled counter__button">-</div>
+                                <div class="counter__title"><input class="input__counter" disabled type="text"
+                                        placeholder="0"></div>
+                                <div class="counter__plus counter__button">+</div>
+                            </div>
+
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-title">дети</div>
+                            <div class="menu__counter  menu__counter--smwidth counter " data-counter>
+                                <div class="counter__minus counter__minus--disabled counter__button">-</div>
+                                <div class="counter__title"><input class="input__counter" disabled type="text"
+                                        placeholder="0"></div>
+                                <div class="counter__plus counter__button">+</div>
+                            </div>
+
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-title">младенцы</div>
+                            <div class="menu__counter menu__counter--smwidth  counter " data-counter>
+                                <div class="counter__minus counter__minus--disabled counter__button">-</div>
+                                <div class="counter__title"><input class="input__counter" disabled type="text"
+                                        placeholder="0"></div>
+                                <div class="counter__plus counter__button">+</div>
+                            </div>
+
+                        </div>
+                        <div class="menu__footer">
+                            <button class="menu__footer-clear" type="button" id="clear">очистить</button>
+                            <button class="menu__footer-accept">применить</button>
+                        </div>
+                    </div><!-- form__menu -->
+
                 </div>
 
 
             </div>
             <div class="sidebar__item">
                 <h3 class="sidebar__item-title">диапазон цены</h3>
-                <div class="range__slider">Здесь будет слайдер</div>
+                <div class="range-slider">
+                    <div class="range-slider__title">Здесь будет слайдер</div>
+                    <div class="range-slider__footer">Стоимость за сутки пребывания в номере</div>
+                </div>
 
             </div>
             <div class="sidebar__item">
                 <h3 class="sidebar__item-title">правила дома</h3>
                 <div class="sidebar__rules">
-                    <input type="checkbox" name="" id="">
+
+                    <label class="sidebar__rules-item check-boxs">
+                        <input class="check-boxs__input" type="checkbox">
+                        <span class="check-boxs__fake"></span>
+                        <span class="check-boxs__text">Можно курить</span>
+                    </label>
+                    <label class="sidebar__rules-item check-boxs">
+                        <input class="check-boxs__input" type="checkbox" checked>
+                        <span class="check-boxs__fake"></span>
+                        <span class="check-boxs__text">Можно с питомцами</span>
+                    </label>
+                    <label class="sidebar__rules-item check-boxs">
+                        <input class="check-boxs__input" type="checkbox" checked>
+                        <span class="check-boxs__fake"></span>
+                        <span class="check-boxs__text">Можно пригласить гостей <br> (до 10
+                            человек)</span>
+                    </label>
                 </div>
 
             </div>
             <div class="sidebar__item">
                 <h3 class="sidebar__item-title">доступность</h3>
+                <div class="sidebar__rich rich">
+
+                    <label class="sidebar__rich-item check-boxs">
+                        <input class="check-boxs__input" type="checkbox">
+                        <span class="check-boxs__fake"></span>
+                        <span class="check-boxs__text check-boxs__text--fwb">Широкий коридор</span>
+                    </label>
+
+                    <div class="rich__text">Ширина коридоров в номере не менее 91 см.</div>
+
+                    <label class="sidebar__rich-item check-boxs">
+                        <input class="check-boxs__input" type="checkbox">
+                        <span class="check-boxs__fake"></span>
+                        <span class="check-boxs__text check-boxs__text--fwb">Помощник для инвалидов</span>
+                    </label>
+
+                    <div class="rich__text">На 1 этаже вас встретит специалист и проводит до номера.</div>
+
+                </div>
+
 
             </div>
             <div class="sidebar__item">

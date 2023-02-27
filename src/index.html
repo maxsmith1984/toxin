@@ -3,7 +3,7 @@ layout: default
 title: Toxin | Home
 ---
 
-<main class="main" style="background-image: url('assets/images/main_img/1.jpg')">
+<main class="main">
     <div class="container">
         <div class="main__content">
             <h1 class="main__title">Найдём номера под<br> ваши пожелания</h1>
@@ -64,10 +64,9 @@ title: Toxin | Home
                     <img class="form__input-arrow form__input-arrow--bt" src="assets/images/icons/arrow-bottom.svg"
                         alt="arrow">
 
-                    <div class="form__btn">
-                        <button class="btn btn--find">подобрать номер
-                            <img class="form__btn-arrow" src="assets/images/icons/arrow_forward.svg"
-                                alt="arrow"></button>
+                    <div class="form__btn"> <!-- всеменно ссылка тегом а -->
+                        <a class="btn btn--find" href="search_room.html">подобрать номер
+                            <img class="form__btn-arrow" src="assets/images/icons/arrow_forward.svg" alt="arrow"></a>
                     </div>
 
                     <div class="form__menu menu" id="menu">
@@ -105,7 +104,7 @@ title: Toxin | Home
                             <button class="menu__footer-clear" type="button" id="clear">очистить</button>
                             <button class="menu__footer-accept">применить</button>
                         </div>
-                    </div><!-- form__accordion accordion -->
+                    </div><!-- form__menu -->
                 </div><!-- form__guests -->
 
 

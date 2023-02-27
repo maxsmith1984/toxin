@@ -2,9 +2,11 @@
     max-width: 32rem;
 
     &__item {
+        margin-bottom: 3rem;
 
         &:first-child {
             margin-top: 3rem;
+
         }
     }
 
@@ -63,11 +65,38 @@
             color: $DarkShade25;
         }
     }
+
+
+
+    &__rules {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &__rules-item,
+    &__rich-item {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        width: 26rem;
+        cursor: pointer;
+    }
+
+    &__rich {
+        display: flex;
+        flex-direction: column;
+        width: 26rem;
+    }
+
 }
 
-.range__slider {
-    width: 26.6rem;
-    height: 6rem;
-    text-align: center;
-    padding: 2rem;
+.rich__text {
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: $DarkShade50;
 }

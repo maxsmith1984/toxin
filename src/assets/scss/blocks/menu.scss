@@ -26,6 +26,13 @@
         }
 
     }
+
+    &__sidebar {
+        top: 4.5rem;
+        width: 26.5rem;
+        border: 1px solid $DarkShade25;
+        box-shadow: 0 10px 20px rgba($DarkShade5, 0.05);
+    }
 }
 
 .menu {
@@ -54,12 +61,15 @@
 
     &__counter {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         width: 40%;
 
         @include breakpoint($mobile-bp) {
             width: 50%;
+        }
+
+        &--smwidth {
+            width: 60%;
         }
     }
 

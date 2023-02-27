@@ -16,6 +16,11 @@
     @include breakpoint($mobile-bp) {
         width: 28rem;
     }
+
+    &-sidebar {
+        width: 26.5rem;
+        top: 4.5rem;
+    }
 }
 
 .wrapper--show {

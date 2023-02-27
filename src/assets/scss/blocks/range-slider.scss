@@ -1,0 +1,21 @@
+.range-slider {
+    margin-bottom: 3rem;
+
+
+
+    &__title {
+        width: 26.6rem;
+        height: 6rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+
+
+    &__footer {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: $DarkShade50;
+    }
+}
