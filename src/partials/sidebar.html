@@ -50,8 +50,10 @@
                             <div class="menu__item-title">Взрослые</div>
                             <div class="menu__counter menu__counter--smwidth counter " data-counter>
                                 <div class="counter__minus counter__minus--disabled counter__button">-</div>
-                                <div class="counter__title"><input class="input__counter" disabled type="text"
-                                        placeholder="0"></div>
+                                <div class="counter__title">
+                                    <input class="input__counter input__counter-guests" disabled type="text"
+                                        placeholder="0">
+                                </div>
                                 <div class="counter__plus counter__button">+</div>
                             </div>
 
@@ -60,8 +62,10 @@
                             <div class="menu__item-title">дети</div>
                             <div class="menu__counter  menu__counter--smwidth counter " data-counter>
                                 <div class="counter__minus counter__minus--disabled counter__button">-</div>
-                                <div class="counter__title"><input class="input__counter" disabled type="text"
-                                        placeholder="0"></div>
+                                <div class="counter__title">
+                                    <input class="input__counter input__counter-guests" disabled type="text"
+                                        placeholder="0">
+                                </div>
                                 <div class="counter__plus counter__button">+</div>
                             </div>
 
@@ -70,8 +74,10 @@
                             <div class="menu__item-title">младенцы</div>
                             <div class="menu__counter menu__counter--smwidth  counter " data-counter>
                                 <div class="counter__minus counter__minus--disabled counter__button">-</div>
-                                <div class="counter__title"><input class="input__counter" disabled type="text"
-                                        placeholder="0"></div>
+                                <div class="counter__title">
+                                    <input class="input__counter input__counter-guests" disabled type="text"
+                                        placeholder="0">
+                                </div>
                                 <div class="counter__plus counter__button">+</div>
                             </div>
 
@@ -143,6 +149,60 @@
             </div>
             <div class="sidebar__item">
                 <h3 class="sidebar__item-title">удобства номера</h3>
+
+                <div class="sidebar__input">
+                    <input class="sidebar__guests form__input form__input--simplebtn" type="button"
+                        value="2 спальни, 2 кровати" data-menucomfort="menu-comfort" id="sum-comfort">
+                    <img class="sidebar__input-arrow form__input-arrow form__input-arrow--bt"
+                        src="assets/images/icons/arrow-bottom.svg" alt="arrow">
+                    <div class="form__menu form__sidebar menu-comfort" id="menu-comfort">
+                        <div class="menu__item">
+                            <div class="menu__item-title">Спальни</div>
+
+                            <div class="menu__counter menu__counter--smwidth menu__counter-comfort" data-comfort>
+                                <div class="counter__minus counter__minus--disabled counter__button-comfort">-</div>
+                                <div class="counter__title">
+                                    <input class="input__counter input__counter-comfort" disabled type="text"
+                                        placeholder="0">
+                                </div>
+                                <div class="counter__plus  counter__button-comfort">+</div>
+                            </div>
+
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-title">Кровати</div>
+
+                            <div class="menu__counter menu__counter--smwidth menu__counter-comfort" data-comfort>
+                                <div class="counter__minus counter__minus--disabled counter__button-comfort">-</div>
+                                <div class="counter__title">
+                                    <input class="input__counter input__counter-comfort" disabled type="text"
+                                        placeholder="0">
+                                </div>
+                                <div class="counter__plus  counter__button-comfort">+</div>
+                            </div>
+
+                        </div>
+                        <div class="menu__item">
+                            <div class="menu__item-title">Ванные комнаты</div>
+
+                            <div class="menu__counter menu__counter--smwidth menu__counter-comfort" data-comfort>
+                                <div class="counter__minus counter__minus--disabled counter__button-comfort">-</div>
+                                <div class="counter__title">
+                                    <input class="input__counter input__counter-comfort" disabled type="text"
+                                        placeholder="0">
+                                </div>
+                                <div class="counter__plus  counter__button-comfort">+</div>
+                            </div>
+
+                        </div>
+
+                        <div class="menu__footer">
+                            <button class="menu__footer-clear" type="button" id="clear-comfort">очистить</button>
+                            <button class="menu__footer-accept">применить</button>
+                        </div>
+                    </div><!-- form__menu -->
+
+                </div>
 
             </div>
             <div class="sidebar__item">

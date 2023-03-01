@@ -1,6 +1,6 @@
 const counter = document.querySelectorAll('[data-counter]');
 const clearBtn = document.getElementById('clear');
-let counerInput = document.querySelectorAll('.input__counter');
+let counerInput = document.querySelectorAll('.input__counter-guests');
 
 if (counter) {
     counter.forEach(counter => {
@@ -38,16 +38,16 @@ if (counter) {
 
 
 
-                let sum = document.getElementById('sum');;
+                let sum = document.getElementById('sum');
 
+                const num1 = [];
 
-                let numbers = [];
 
                 for (let i = 0; i < counerInput.length; i++) {
-                    numbers.push(counerInput[i].value);
+                    num1.push(counerInput[i].value);
 
                     counerInput[i].addEventListener('input', function () {
-                        numbers[i] = this.value;
+                        num1[i] = this.value;
                         updateResults();
                     });
                 }
@@ -55,13 +55,13 @@ if (counter) {
 
 
                 function updateResults() {
-                    sum.value = sumArr(numbers)
+                    sum.value = sumArr(num1)
                     if (sum.value == 1) {
-                        sum.value = sumArr(numbers) + ' ' + 'гость';
+                        sum.value = sumArr(num1) + ' ' + 'гость';
                     } else if (sum.value >= 2 && 4 >= sum.value) {
-                        sum.value = sumArr(numbers) + ' ' + 'гостя';
+                        sum.value = sumArr(num1) + ' ' + 'гостя';
                     } else if (sum.value >= 5) {
-                        sum.value = sumArr(numbers) + ' ' + 'гостей';
+                        sum.value = sumArr(num1) + ' ' + 'гостей';
                     } else if (sum.value == 0) {
                         sum.value = 'Сколько гостей';
                     }
