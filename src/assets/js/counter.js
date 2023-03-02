@@ -1,6 +1,6 @@
 const counter = document.querySelectorAll('[data-counter]');
 const clearBtn = document.getElementById('clear');
-let counerInput = document.querySelectorAll('.input__counter-guests');
+let counerInput = document.querySelectorAll('.input__counter');
 
 if (counter) {
     counter.forEach(counter => {
@@ -41,6 +41,7 @@ if (counter) {
                 let sum = document.getElementById('sum');
 
                 const num1 = [];
+
 
 
                 for (let i = 0; i < counerInput.length; i++) {
