@@ -1,5 +1,6 @@
 .sidebar {
     max-width: 32rem;
+    height: 135.5rem;
 
     &__item {
         margin-bottom: 3rem;
@@ -99,4 +100,42 @@
     font-size: 1.2rem;
     line-height: 1.4rem;
     color: $DarkShade50;
+}
+
+.more-comfort {
+    position: relative;
+    cursor: pointer;
+
+    &__arrow {
+        position: absolute;
+        top: 0;
+        right: 7rem;
+
+        transition: .2s linear;
+
+        &--show {
+            transform: rotate(180deg);
+        }
+    }
+
+    &:hover .more-comfort__arrow {
+        transform: rotate(180deg);
+    }
+
+    &__arrow--show {
+        transform: rotate(180deg);
+    }
+
+}
+
+.more-comfort__content {
+    display: none;
+
+
+
+    &--show {
+        display: block;
+
+        animation: showBlock .5s;
+    }
 }

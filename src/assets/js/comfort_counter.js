@@ -106,3 +106,33 @@ if (counterComfort) {
         });
     });
 }
+
+
+const menuComfort = document.getElementById('menu-comfort');
+const menuBtnComfort = document.querySelectorAll('[data-menucomfort]');
+const body = document.body;
+
+if (menuComfort) {
+    menuBtnComfort.forEach(item => {
+        item.addEventListener('click', event => {
+            menuComfort.classList.toggle('form__menu--show');
+            event.stopPropagation();
+        });
+    });
+
+    function menuComfortClose() {
+        menuComfort.classList.remove('form__menu--show');
+    }
+
+
+    function menuComfortCloseClickOutside(e) {
+        if (!e.target.matches('.menu-comfort, .menu-comfort *')) {
+            if (menuComfort.classList.contains('form__menu--show')) {
+                menuComfortClose();
+            }
+        }
+    }
+
+    body.addEventListener('click', menuComfortCloseClickOutside);
+    body.addEventListener('touchstart', menuComfortCloseClickOutside);
+}
