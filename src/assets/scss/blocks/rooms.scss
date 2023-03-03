@@ -1,0 +1,155 @@
+.room-inner {
+
+    // .room-inner__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+
+        width: 27rem;
+
+        border-radius: 4px;
+        box-shadow: 0 10px 20px rgba($DarkShade100, .05);
+
+
+    }
+
+    // .room-inner__slider
+
+    &__slider {}
+
+    // .room-inner__room
+
+    &__room {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1.7rem 1.9rem 2rem;
+    }
+}
+
+.slider {
+
+    // .slider__photo
+
+    &__photo {
+        display: inline-block;
+        width: 27rem;
+        height: 15rem;
+
+        border-radius: 4px 4px 0 0;
+    }
+}
+
+.room {
+
+    // .room__content
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        position: relative;
+
+        padding-bottom: 1rem;
+
+        &::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background-color: $DarkShade10;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+
+    // .room__info
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+    }
+
+    // .room__number
+
+    &__number {
+        margin-right: 1px;
+
+        font-weight: 700;
+        font-size: 1.9rem;
+        line-height: 1.7;
+        color: $DarkShade100;
+
+        &>span {
+            font-size: 1.4rem;
+        }
+    }
+
+    // .room__quality
+
+    &__quality {
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: $Purple;
+    }
+
+    // .room__price
+
+    &__price {
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: $DarkShade50;
+
+        &>span {
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+    }
+
+    // .room__reviews
+
+    &__reviews {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: 1rem;
+    }
+
+    // .room__stars
+
+    &__stars {
+        display: flex;
+        flex-wrap: nowrap;
+
+        &-item {
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+
+    // .room__testimonials
+
+    &__testimonials {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+
+        color: $DarkShade50;
+
+        &>span {
+            font-weight: 700;
+        }
+    }
+}

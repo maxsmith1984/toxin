@@ -1,0 +1,23 @@
+.wrapper-search {
+    display: flex;
+}
+
+.room-wrapper {
+    padding: 3rem 0 2rem 5rem;
+}
+
+.room-title {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+
+    font-weight: 700;
+    font-size: 2.4rem;
+
+    color: $DarkShade100;
+}
+
+.room-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
