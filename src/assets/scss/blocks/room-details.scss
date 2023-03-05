@@ -1,0 +1,46 @@
+.room-details {
+    display: flex;
+    flex-direction: column;
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 7rem;
+
+
+    }
+
+    &__details-left {
+        // width: 65%;
+        width: 724px;
+        height: auto;
+    }
+
+    &__details-right {
+        // width: 35%;
+        width: 476px;
+        height: auto;
+    }
+
+}
+
+.room-preview {
+    display: flex;
+    justify-content: center;
+    height: auto;
+
+    &__left,
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+.preview-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
