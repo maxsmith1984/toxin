@@ -1,18 +1,5 @@
 .footer {
-    position: relative;
-
-    ::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        content: "";
-        display: block;
-        height: 1px;
-        background-color: #E5E5E5;
-
-    }
+    border-top: 1px solid #E5E5E5;
 
     &__content {
         display: flex;
@@ -157,19 +144,7 @@
     }
 
     &__copyright {
-        position: relative;
+        border-top: 1px solid #E5E5E5;
 
-        &::after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-            content: "";
-            display: block;
-            height: 1px;
-            background-color: #E5E5E5;
-
-        }
     }
 }

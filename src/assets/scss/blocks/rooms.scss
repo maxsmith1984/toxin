@@ -52,19 +52,20 @@
         justify-content: space-between;
         align-items: baseline;
 
-        position: relative;
-
         padding-bottom: 1rem;
 
-        &::after {
-            content: "";
-            height: 1px;
-            width: 100%;
-            background-color: $DarkShade10;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 1;
+        border-bottom: 1px solid $DarkShade10;
+
+    }
+
+    &__open {
+        text-decoration: none;
+
+        transition: transform .1s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+
         }
     }
 
