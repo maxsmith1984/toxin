@@ -70,7 +70,162 @@ title: Toxin | RoomDetails
             </div><!-- /room-details__details-left -->
 
 
-            <div class="room-details__details-right"></div>
+            <div class="room-details__details-right">
+
+                <div class="main__content">
+
+                    <form class="form" action="/" method="post">
+                        <div class="room__content room__content--single">
+
+                            <div class="room__info">
+                                <p class="room__number room__number--single"><span>№</span> 888</p>
+                                <p class="room__quality">люкс</p>
+                            </div>
+
+                            <div class="room__price">9 990₽ <span>в сутки</span></div>
+                        </div>
+
+                        <div class="form__date">
+                            <div class="form__arrive">
+                                <h3 class="form__titile">прибытие</h3>
+                                <input class="form__input input_date" type="date" placeholder="дд.мм.гггг"
+                                    data-calendar="calendar">
+                                <img class="form__input-arrow" src="assets/images/icons/arrow-bottom.svg" alt="arrow">
+                            </div>
+                            <div class="form__departure">
+                                <h3 class="form__titile">выезд</h3>
+                                <input class="form__input input_date" type="date" placeholder="дд.мм.гггг"
+                                    data-calendar="calendar">
+                                <img class="form__input-arrow" src="assets/images/icons/arrow-bottom.svg" alt="arrow">
+
+                            </div>
+
+                            <div class="wrapper" id="calendar">
+                                <header class="calendar-header">
+
+
+                                    <img id="prev" class="calendar-header__arrow"
+                                        src="assets/images/icons/arrow_back_purple.svg" alt="arrow">
+                                    <div class="calendar-header__date"></div>
+                                    <img id="next" class="calendar-header__arrow"
+                                        src="assets/images/icons/arrow_forward_purple.svg" alt="arrow">
+
+                                </header>
+                                <div class="calendar">
+                                    <ul class="weeks">
+                                        <li class="weeks__item">Пн</li>
+                                        <li class="weeks__item">Вт</li>
+                                        <li class="weeks__item">Ср</li>
+                                        <li class="weeks__item">Чт</li>
+                                        <li class="weeks__item">Пт</li>
+                                        <li class="weeks__item">Сб</li>
+                                        <li class="weeks__item">Вс</li>
+                                    </ul>
+                                    <ul class="days">
+                                    </ul>
+                                </div>
+                                <div class="menu__footer">
+                                    <button class="menu__footer-clear" type="button"
+                                        id="clear-calendar">очистить</button>
+                                    <button class="menu__footer-accept">применить</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="form__guests">
+                            <h3 class="form__titile">гости</h3>
+                            <input class="form__input form__input--simplebtn" type="button" value="Cколько гостей"
+                                data-menu="menu" id="sum">
+                            <img class="form__input-arrow form__input-arrow--bt"
+                                src="assets/images/icons/arrow-bottom.svg" alt="arrow">
+
+                            <div class="form__menu menu" id="menu">
+                                <div class="menu__item">
+                                    <div class="menu__item-title">Взрослые</div>
+                                    <div class="menu__counter counter " data-counter>
+                                        <div class="counter__minus counter__minus--disabled counter__button">-</div>
+                                        <div class="counter__title"><input class="input__counter" disabled type="text"
+                                                placeholder="0"></div>
+                                        <div class="counter__plus counter__button">+</div>
+                                    </div>
+
+                                </div>
+                                <div class="menu__item">
+                                    <div class="menu__item-title">дети</div>
+                                    <div class="menu__counter counter " data-counter>
+                                        <div class="counter__minus counter__minus--disabled counter__button">-</div>
+                                        <div class="counter__title"><input class="input__counter" disabled type="text"
+                                                placeholder="0"></div>
+                                        <div class="counter__plus counter__button">+</div>
+                                    </div>
+
+                                </div>
+                                <div class="menu__item">
+                                    <div class="menu__item-title">младенцы</div>
+                                    <div class="menu__counter counter " data-counter>
+                                        <div class="counter__minus counter__minus--disabled counter__button">-</div>
+                                        <div class="counter__title"><input class="input__counter" disabled type="text"
+                                                placeholder="0"></div>
+                                        <div class="counter__plus counter__button">+</div>
+                                    </div>
+
+                                </div>
+                                <div class="menu__footer">
+                                    <button class="menu__footer-clear" type="button" id="clear">очистить</button>
+                                    <button class="menu__footer-accept">применить</button>
+                                </div>
+                            </div><!-- form__menu -->
+
+
+
+
+                            <div class="price">
+                                <div class="price-item">
+                                    <div class="price-item__title">9 990₽ х 4 суток</div>
+                                    <div class="price-item__value">39 960₽</div>
+                                </div>
+                                <div class="price-item">
+                                    <div class="price-item__title">Сбор за услуги: скидка 2 179₽</div>
+                                    <img class="price-item__more" src="assets/images/icons/i.svg" alt="More info">
+                                    <div class="price-item__value">0₽</div>
+                                </div>
+                                <div class="price-item">
+                                    <div class="price-item__title price-item__title--lh">Сбор за дополнительные <br>
+                                        услуги</div>
+                                    <img class="price-item__more price-item__more--mg" src="assets/images/icons/i.svg"
+                                        alt="More info">
+                                    <div class="price-item__value">300₽</div>
+                                </div>
+                                <div class="price-item__result result">
+                                    <div class="result__title">Итого</div>
+                                    <span class="result__underline"></span>
+                                    <div class="result__value">38 081₽</div>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="form__btn"> <!-- всеменно ссылка тегом а -->
+                                <a class="btn btn--find" href="search_room.html">забронировать
+                                    <img class="form__btn-arrow" src="assets/images/icons/arrow_forward.svg"
+                                        alt="arrow">
+                                </a>
+                            </div>
+                        </div><!-- form__guests -->
+
+
+
+
+                    </form>
+
+                </div>
+
+            </div>
 
         </section><!-- room-details__main -->
     </div> <!-- /container -->

@@ -1,10 +1,9 @@
 .room-details {
-    display: flex;
-    flex-direction: column;
 
     &__main {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
         margin-top: 7rem;
 
@@ -12,14 +11,10 @@
     }
 
     &__details-left {
-        // width: 65%;
-        width: 724px;
         height: auto;
     }
 
     &__details-right {
-        // width: 35%;
-        width: 476px;
         height: auto;
     }
 

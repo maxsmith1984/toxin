@@ -52,10 +52,16 @@
         justify-content: space-between;
         align-items: baseline;
 
-        padding-bottom: 1rem;
+
 
         border-bottom: 1px solid $DarkShade10;
 
+        &--single {
+
+            margin-top: 4rem;
+            border: none;
+            padding: 0;
+        }
     }
 
     &__open {
@@ -85,11 +91,15 @@
 
         font-weight: 700;
         font-size: 1.9rem;
-        line-height: 1.7;
+        line-height: 1.7rem;
         color: $DarkShade100;
 
         &>span {
             font-size: 1.4rem;
+        }
+
+        &--single {
+            margin-right: .8rem;
         }
     }
 
