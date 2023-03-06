@@ -4,6 +4,14 @@
 
     &__info {
         display: flex;
+
+        @include breakpoint($footernone-bp) {
+            justify-content: space-around;
+        }
+
+        @include breakpoint($mobile-bp) {
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -15,6 +23,10 @@
         display: flex;
         flex-direction: column;
         margin-right: 7rem;
+
+        @include breakpoint($tablet-bp) {
+            margin-right: 0rem;
+        }
     }
 
     // .info__room-header
@@ -110,6 +122,11 @@
         height: auto;
 
         margin-right: 3rem;
+
+        @include breakpoint($smallmobile-bp) {
+            margin-right: 1rem;
+
+        }
     }
 
     // .pie-content__list

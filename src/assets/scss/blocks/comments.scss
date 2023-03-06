@@ -1,5 +1,13 @@
 .comments {
     margin-top: 1.3rem;
+
+    @include breakpoint($footernone-bp) {
+        padding: 0 2rem;
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding: 0;
+    }
 }
 
 .comments-header {
@@ -8,6 +16,21 @@
     align-items: center;
 
     margin-bottom: 2rem;
+
+    @include breakpoint($tablet-bp) {
+        justify-content: space-around;
+    }
+
+    @include breakpoint($mobile-bp) {
+        justify-content: space-between;
+    }
+
+    @include breakpoint($smallmobile-bp) {
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-end
+    }
 
     // .comments-header__title
 

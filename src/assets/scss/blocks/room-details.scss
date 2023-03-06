@@ -7,16 +7,29 @@
 
         margin-top: 7rem;
 
+        @include breakpoint($footernone-bp) {
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
 
     }
 
     &__details-left {
         width: 60%;
         height: auto;
+
+        @include breakpoint($footernone-bp) {
+            width: 100%;
+        }
     }
 
     &__details-right {
         height: auto;
+
+        @include breakpoint($footernone-bp) {
+            margin: 0 auto 2rem
+        }
     }
 
 }
@@ -26,11 +39,27 @@
     justify-content: center;
     height: auto;
 
+    @include breakpoint($footernone-bp) {
+        flex-wrap: wrap;
+    }
+
     &__left,
     &__right {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    &__right {
+        @include breakpoint($footernone-bp) {
+            flex-wrap: nowrap;
+            flex-direction: row;
+            overflow: hidden;
+        }
+
+        @include breakpoint($smallmobile-bp) {
+            flex-direction: column;
+        }
     }
 
 }
