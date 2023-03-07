@@ -7,6 +7,9 @@
     background: url('../images/main_img/1.jpg') center no-repeat;
     background-size: cover;
 
+    &--pdt {
+        padding-top: 2rem;
+    }
 
     &__content {
         width: 38rem;
@@ -14,6 +17,10 @@
         background-color: $white;
         border-radius: 4px;
         box-shadow: 0 4px 25px rgba($black, .20);
+
+        &--center {
+            margin: 0 auto;
+        }
 
         @include breakpoint($mobile-bp) {
             width: 30rem;

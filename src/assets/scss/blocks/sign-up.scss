@@ -1,0 +1,81 @@
+.gingup {
+    margin-top: 2rem;
+
+    // .gingup__name
+
+    &__name,
+    &__email {
+        margin-bottom: 1rem;
+    }
+
+    // .gingup__surname
+    &__name,
+    &__surname,
+    &__birth,
+    &__email,
+    &__password {
+        display: block;
+
+        width: 100%;
+        height: 4.4rem;
+
+        padding: 1.3rem 0 1.3rem 1.5rem;
+
+        border: 1px solid $DarkShade25;
+        border-radius: .4rem;
+        transition: .2s ease-in-out;
+
+        color: $DarkShade75;
+        font-family: inherit;
+
+        &::placeholder {
+            font-family: inherit;
+            color: $DarkShade25;
+        }
+
+        &:hover,
+        &:focus {
+            border: 1px solid $DarkShade50;
+
+        }
+
+    }
+
+    &__birth {
+        text-transform: uppercase;
+    }
+}
+
+.signup-sex {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.signup-birth,
+.signup-log,
+.signup-btn {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.signup-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+
+    margin-bottom: .5rem;
+}
+
+.signup-switch {
+    display: flex;
+    align-items: center;
+}
+
+.signup-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 3rem 0;
+}
