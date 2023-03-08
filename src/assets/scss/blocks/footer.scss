@@ -110,7 +110,7 @@
         background: $white;
         text-align: left;
 
-        transition: border-color, box-shadow .2s linear;
+        transition: border-color .2s linear;
 
         &:hover {
             border-color: $DarkShade100;
@@ -119,7 +119,7 @@
         &:focus {
             outline: 0;
             border-color: $DarkShade100;
-            box-shadow: 0 4px 4px rgba($black, .25);
+
         }
 
         &::placeholder {
@@ -140,6 +140,7 @@
 
         transform: translateY(-50%);
 
+        cursor: pointer;
 
     }
 

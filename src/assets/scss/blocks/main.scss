@@ -22,6 +22,10 @@
             margin: 0 auto;
         }
 
+        &--mtcenter {
+            margin: 15.2rem auto;
+        }
+
         @include breakpoint($mobile-bp) {
             width: 30rem;
         }
