@@ -14,12 +14,15 @@
         border-radius: 4px;
         box-shadow: 0 10px 20px rgba($DarkShade100, .05);
 
+        @include breakpoint($sidebarnone) {
+            margin-left: 0;
+            margin-bottom: 1rem;
+
+            width: 25rem;
+        }
 
     }
 
-    // .room-inner__slider
-
-    &__slider {}
 
     // .room-inner__room
 
@@ -30,18 +33,6 @@
     }
 }
 
-.slider {
-
-    // .slider__photo
-
-    &__photo {
-        display: inline-block;
-        width: 27rem;
-        height: 15rem;
-
-        border-radius: 4px 4px 0 0;
-    }
-}
 
 .room {
 
@@ -52,7 +43,7 @@
         justify-content: space-between;
         align-items: baseline;
 
-
+        padding-bottom: 1rem;
 
         border-bottom: 1px solid $DarkShade10;
 
@@ -87,7 +78,7 @@
     // .room__number
 
     &__number {
-        margin-right: 1px;
+        margin-right: .5rem;
 
         font-weight: 700;
         font-size: 1.9rem;
@@ -96,6 +87,7 @@
 
         &>span {
             font-size: 1.4rem;
+            margin-right: .25rem;
         }
 
         &--single {
@@ -122,6 +114,7 @@
         color: $DarkShade50;
 
         &>span {
+            margin-left: .5rem;
             font-weight: 400;
             font-size: 1.2rem;
         }
@@ -160,6 +153,7 @@
         color: $DarkShade50;
 
         &>span {
+            margin-right: .5rem;
             font-weight: 700;
         }
     }

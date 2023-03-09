@@ -4,6 +4,10 @@
 
     margin-top: 1rem;
 
+    @include breakpoint($sidebarnone) {
+        display: none;
+    }
+
     &__item {
         margin-bottom: 3rem;
 

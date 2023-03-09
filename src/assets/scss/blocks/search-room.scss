@@ -4,6 +4,10 @@
 
 .room-wrapper {
     padding: 3rem 0 2rem 5rem;
+
+    @include breakpoint($sidebarnone) {
+        padding: 1rem;
+    }
 }
 
 .room-title {
@@ -12,8 +16,15 @@
 
     font-weight: 700;
     font-size: 2.4rem;
+    line-height: 2.9rem;
 
     color: $DarkShade100;
+
+    @include breakpoint($footernone-bp) {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
 }
 
 .room-inner {
