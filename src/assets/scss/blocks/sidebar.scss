@@ -4,9 +4,28 @@
 
     margin-top: 1rem;
 
+    transition: all .3s linear;
+
     @include breakpoint($sidebarnone) {
-        display: none;
+        position: absolute;
+        z-index: -1;
+        left: -35rem;
+        height: auto;
+
     }
+
+    &--show {
+        display: block;
+        padding-left: 2rem;
+
+        position: absolute;
+        z-index: 10;
+        left: -2rem;
+
+        background-color: $white;
+        box-shadow: 10px 10px 40px rgba($black, .80);
+    }
+
 
     &__item {
         margin-bottom: 3rem;
@@ -55,6 +74,10 @@
         cursor: pointer;
 
         transform: translateY(-50%);
+
+        @include breakpoint($sidebarnone) {
+            right: 4.5rem;
+        }
     }
 
     &__guests {
@@ -118,6 +141,10 @@
         right: 1.5rem;
 
         transition: .2s linear;
+
+        @include breakpoint($sidebarnone) {
+            right: 4.5rem;
+        }
 
         &--show {
             transform: rotate(180deg);
